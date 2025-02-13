@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-body { 
+body {
   font-family: "Outfit", serif;
   line-height: 1.6;
   color: $text-color;
@@ -35,8 +35,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
-  margin-right: calc(var(--bs-gutter-x) * -.5);
-  margin-left: calc(var(--bs-gutter-x) * -.5)
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
 }
 
 .flex {
@@ -71,35 +71,53 @@ body {
   align-items: end;
 }
 
-.my-2{
+.my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.my-3{
+.my-3 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.my-4{
+.my-4 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
 .my-5 {
-
   margin-top: 3rem;
   margin-bottom: 3rem;
-
 }
 
-.row>* {
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
-  margin-top: var(--bs-gutter-y)
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
 }
 
 .col {
@@ -448,7 +466,17 @@ body {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
- 
+}
+.customers {
+  padding: 8rem 1rem;
+  background: rgb(226,0,26);
+  background: linear-gradient(0deg, rgba(226,0,26,1) 70%, rgba(255,255,255,1) 100%);
+
+  h2 {
+    font-size: 1.2rem;
+    color: $color-white;
+    margin-bottom: 2rem;
+  }
 }
 
 .card {
@@ -456,14 +484,14 @@ body {
   max-width: 400px;
   background: #fff;
   border-radius: 5px;
-  position: relative;
   overflow: hidden;
   font-family: "Outfit", serif;
 
   &__header {
     position: relative;
+    overflow: visible;
     height: 200px;
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -495,8 +523,8 @@ body {
 
   &__number {
     position: absolute;
-    bottom: 140px;
-    left: 5px;
+    bottom: -15px;
+    left: 15px;
     width: 35px;
     height: 35px;
     background: white;
@@ -516,7 +544,7 @@ body {
 
     h2 {
       font-size: 1.8rem;
-      line-height: 1.0;
+      line-height: 1;
       color: $secondary-color;
       font-weight: bold;
       margin-top: 20px;
@@ -525,7 +553,7 @@ body {
 
     p {
       font-size: 0.8rem;
-      line-height: 1.0;
+      line-height: 1;
       margin-bottom: 10px;
       color: #555;
 
@@ -536,6 +564,19 @@ body {
   }
 }
 
+.card-customer {
+  background-color: rgba(242, 38, 38, 0.453);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.card-customer-lg {
+  width: 310px !important;
+}
 
 .gallery {
   padding: 3rem 1rem;

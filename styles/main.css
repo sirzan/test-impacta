@@ -85,6 +85,26 @@ body {
   margin-bottom: 3rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #e2001a;
+}
+
+.text-secondary {
+  color: #001c3a;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-start {
+  text-align: start;
+}
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -466,19 +486,29 @@ body {
   margin-bottom: 2rem;
 }
 
+.customers {
+  padding: 8rem 1rem;
+  background: rgb(226, 0, 26);
+  background: linear-gradient(0deg, rgb(226, 0, 26) 70%, rgb(255, 255, 255) 100%);
+}
+.customers h2 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
 .card {
   width: 100%;
   max-width: 400px;
   background: #fff;
   border-radius: 5px;
-  position: relative;
   overflow: hidden;
   font-family: "Outfit", serif;
 }
 .card__header {
   position: relative;
+  overflow: visible;
   height: 200px;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -506,8 +536,8 @@ body {
 }
 .card__number {
   position: absolute;
-  bottom: 140px;
-  left: 5px;
+  bottom: -15px;
+  left: 15px;
   width: 35px;
   height: 35px;
   background: white;
@@ -540,6 +570,20 @@ body {
 }
 .card__body p strong {
   color: #001c3a;
+}
+
+.card-customer {
+  background-color: rgba(242, 38, 38, 0.453);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.card-customer-lg {
+  width: 310px !important;
 }
 
 .gallery {
