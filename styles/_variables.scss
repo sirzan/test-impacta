@@ -1,0 +1,33 @@
+// Colores principales
+$primary-color: #e2001a; // Azul principal
+$secondary-color: #001c3a; // Verde secundario
+$text-color: #333; // Color del texto
+$bg-color: #f9f9f9; // Color de fondo
+
+$card-bg: #ffffff;
+$card-radius: 15px;
+$card-shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+
+// Fuentes y tamaños
+$font-family: "Outfit", serif;
+$font-size-base: 1rem;
+$heading-font-size: 2rem;
+
+// Espaciado
+$padding-base: 1rem;
+$margin-base: 1rem;
+
+// Sombras
+$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+// Breakpoints para diseño responsivo
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Transiciones
+$transition-base: all 0.3s ease;
+
+// Swiper personalización
+$swiper-pagination-color: #fff; // Color de los puntos del slider
+$swiper-navigation-color: #fff; // Color de los botones de navegación

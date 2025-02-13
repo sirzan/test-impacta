@@ -1,0 +1,642 @@
+// Importar variables
+@import "variables";
+
+// Reset básico
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: "Outfit", serif;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+// Clases de contenedor
+.container {
+  width: 100%;
+  max-width: 1200px; // Ancho máximo estándar
+  margin: 0 auto; // Centrado horizontal
+  padding: 0 1rem; // Espaciado interno
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 1rem; // Espaciado interno
+}
+
+// Clases de fila y columna
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5)
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: start;
+}
+
+.align-items-end {
+  align-items: end;
+}
+
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-3{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-4{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-5 {
+
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+}
+
+.row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y)
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+// Sistema de cuadrícula responsivo
+@mixin make-col($size) {
+  flex-basis: calc(100% / 12 * $size);
+  max-width: calc(100% / 12 * $size);
+}
+
+@mixin make-breakpoint($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Clases base
+.col-1 {
+  @include make-col(1);
+}
+.col-2 {
+  @include make-col(2);
+}
+.col-3 {
+  @include make-col(3);
+}
+.col-4 {
+  @include make-col(4);
+}
+.col-5 {
+  @include make-col(5);
+}
+.col-6 {
+  @include make-col(6);
+}
+.col-7 {
+  @include make-col(7);
+}
+.col-8 {
+  @include make-col(8);
+}
+.col-9 {
+  @include make-col(9);
+}
+.col-10 {
+  @include make-col(10);
+}
+.col-11 {
+  @include make-col(11);
+}
+.col-12 {
+  @include make-col(12);
+}
+
+// Responsive classes
+@include make-breakpoint($breakpoint-mobile) {
+  .col-sm-1 {
+    @include make-col(1);
+  }
+  .col-sm-2 {
+    @include make-col(2);
+  }
+  .col-sm-3 {
+    @include make-col(3);
+  }
+  .col-sm-4 {
+    @include make-col(4);
+  }
+  .col-sm-5 {
+    @include make-col(5);
+  }
+  .col-sm-6 {
+    @include make-col(6);
+  }
+  .col-sm-7 {
+    @include make-col(7);
+  }
+  .col-sm-8 {
+    @include make-col(8);
+  }
+  .col-sm-9 {
+    @include make-col(9);
+  }
+  .col-sm-10 {
+    @include make-col(10);
+  }
+  .col-sm-11 {
+    @include make-col(11);
+  }
+  .col-sm-12 {
+    @include make-col(12);
+  }
+}
+
+@include make-breakpoint($breakpoint-tablet) {
+  .col-md-1 {
+    @include make-col(1);
+  }
+  .col-md-2 {
+    @include make-col(2);
+  }
+  .col-md-3 {
+    @include make-col(3);
+  }
+  .col-md-4 {
+    @include make-col(4);
+  }
+  .col-md-5 {
+    @include make-col(5);
+  }
+  .col-md-6 {
+    @include make-col(6);
+  }
+  .col-md-7 {
+    @include make-col(7);
+  }
+  .col-md-8 {
+    @include make-col(8);
+  }
+  .col-md-9 {
+    @include make-col(9);
+  }
+  .col-md-10 {
+    @include make-col(10);
+  }
+  .col-md-11 {
+    @include make-col(11);
+  }
+  .col-md-12 {
+    @include make-col(12);
+  }
+}
+
+@include make-breakpoint($breakpoint-desktop) {
+  .col-lg-1 {
+    @include make-col(1);
+  }
+  .col-lg-2 {
+    @include make-col(2);
+  }
+  .col-lg-3 {
+    @include make-col(3);
+  }
+  .col-lg-4 {
+    @include make-col(4);
+  }
+  .col-lg-5 {
+    @include make-col(5);
+  }
+  .col-lg-6 {
+    @include make-col(6);
+  }
+  .col-lg-7 {
+    @include make-col(7);
+  }
+  .col-lg-8 {
+    @include make-col(8);
+  }
+  .col-lg-9 {
+    @include make-col(9);
+  }
+  .col-lg-10 {
+    @include make-col(10);
+  }
+  .col-lg-11 {
+    @include make-col(11);
+  }
+  .col-lg-12 {
+    @include make-col(12);
+  }
+}
+
+@include make-breakpoint(1200px) {
+  .col-xl-1 {
+    @include make-col(1);
+  }
+  .col-xl-2 {
+    @include make-col(2);
+  }
+  .col-xl-3 {
+    @include make-col(3);
+  }
+  .col-xl-4 {
+    @include make-col(4);
+  }
+  .col-xl-5 {
+    @include make-col(5);
+  }
+  .col-xl-6 {
+    @include make-col(6);
+  }
+  .col-xl-7 {
+    @include make-col(7);
+  }
+  .col-xl-8 {
+    @include make-col(8);
+  }
+  .col-xl-9 {
+    @include make-col(9);
+  }
+  .col-xl-10 {
+    @include make-col(10);
+  }
+  .col-xl-11 {
+    @include make-col(11);
+  }
+  .col-xl-12 {
+    @include make-col(12);
+  }
+}
+
+.header {
+  background: $primary-color;
+  color: white;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+    // Logo
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    // Botón de hamburguesa
+    .menu-toggle {
+      display: none; // Oculto por defecto
+      flex-direction: column;
+      gap: 3px;
+      cursor: pointer;
+
+      span {
+        width: 25px;
+        height: 3px;
+        background: white;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    // Contenido del navbar
+    .navbar-content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      .nav-links {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+
+        a {
+          color: white;
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: lighten($primary-color, 20%);
+          }
+        }
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 1rem;
+
+        a {
+          color: white;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: $breakpoint-tablet) {
+  .header {
+    .navbar {
+      flex-direction: column;
+
+      // Mostrar el botón de hamburguesa
+      .menu-toggle {
+        display: flex;
+      }
+
+      // Ocultar el contenido del navbar por defecto
+      .navbar-content {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+
+        &.active {
+          display: flex;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: $padding-base * 5 $padding-base;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/images/slide1.jpg") no-repeat center/cover;
+  color: white;
+
+  h1 {
+    font-family: $font-family;
+    font-size: $heading-font-size;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    background: $secondary-color;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: darken($secondary-color, 10%);
+    }
+  }
+}
+
+.services {
+  padding: 8rem 1rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+ 
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  font-family: "Outfit", serif;
+
+  &__header {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(217, 22, 41, 0.5); // Overlay rojo con transparencia
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    width: 130px !important; // Tamaño del ícono
+    height: 130px !important;
+    z-index: 2;
+  }
+
+  &__number {
+    position: absolute;
+    bottom: 140px;
+    left: 5px;
+    width: 35px;
+    height: 35px;
+    background: white;
+    color: $primary-color;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  &__body {
+    padding: 5px;
+    color: #333;
+
+    h2 {
+      font-size: 1.8rem;
+      line-height: 1.0;
+      color: $secondary-color;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 0.8rem;
+      line-height: 1.0;
+      margin-bottom: 10px;
+      color: #555;
+
+      strong {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+
+.gallery {
+  padding: 3rem 1rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .swiper-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    .swiper-slide {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+
+    .swiper-pagination {
+      position: relative;
+      bottom: 0;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: $secondary-color;
+  color: white;
+
+  .footer-section {
+    h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: $primary-color;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        color: white;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .services .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .services .service-cards {
+    flex-direction: column;
+  }
+}
+
+// Responsive Design
+@media (max-width: $breakpoint-tablet) {
+  .col {
+    flex-basis: 100%; // Todas las columnas ocupan el ancho completo en dispositivos móviles
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: $swiper-pagination-color;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $swiper-navigation-color;
+}

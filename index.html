@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing Page moderna y responsiva desarrollada con HTML y SCSS."
+    />
+    <title>Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles/icon.css"></head>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar container">
+        <!-- Logo -->
+        <div class="logo">MiLogo</div>
+
+        <!-- Botón de hamburguesa -->
+        <button class="menu-toggle" aria-label="Abrir/Cerrar menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Contenido del navbar -->
+        <div class="navbar-content">
+          <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero container-fluid" data-aos="fade-up">
+      <div class="container">
+        <h1>Bienvenido a nuestra página</h1>
+        <p>Descubre nuestros servicios y productos innovadores.</p>
+        <a href="#servicios" class="btn">Conoce más</a>
+      </div>
+    </section>
+  
+    
+    <section id="servicios" class="services container">
+      <div class="row">
+        <div class="col-md-6 my-5 flex align-center justify-content-center">
+          <div class="card">
+            <div class="card__header">
+              <img
+                src="/assets/images/digital-brain-with-neon-lights-representing-fusion-neuroscience-advanced-technology.jpg"
+                alt="Creatividad"
+              />
+              <img
+                src="/assets/images/icons/salud-mental.svg"
+                class="card__icon"
+                alt="Icono"
+              />
+            </div>
+            <div class="card__number">1</div>
+            <div class="card__body">
+              <h2>CREATIVIDAD SIN LÍMITES
+                PARA IMPULSAR TU MARCA</h2>
+              <p>
+                Transformamos ideas en <strong>experiencias inolvidables</strong>, creando campañas
+que capturan la esencia de tu marca y resuenan profundamente con tu
+audiencia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 my-5 flex align-center justify-content-center">
+          <div class="card">
+            <div class="card__header">
+              <img
+                src="/assets/images/3d-rendering-dartboard-red-blurry-motion-capturing-dynamic-action-competitive-setting.jpg"
+                alt="Creatividad"
+              />
+              <img
+                src="/assets/images/icons/esperma.svg"
+                class="card__icon"
+                alt="Icono"
+              />
+            </div>
+            <div class="card__number">2</div>
+            <div class="card__body">
+              <h2>AGILIDAD Y EFICIENCIA
+                EN CADA PROYECTO</h2>
+              <p>
+                <strong>Respuesta rápida y eficiente</strong> para un mercado en constante cambio,
+adaptándonos a tus necesidades y superando tus expectativas con cada
+entrega.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 my-5 flex align-center justify-content-center">
+          <div class="card">
+            <div class="card__header">
+              <img
+                src="/assets/images/isolated-beautiful-cyber-woman-against-abstract-background.jpg"
+                alt="Creatividad"
+              />
+              <img
+                src="/assets/images/icons/chincheta.svg"
+                class="card__icon"
+                alt="Icono"
+              />
+            </div>
+            <div class="card__number">2</div>
+            <div class="card__body">
+              <h2>TECNOLOGÍA PARA RESULTADOS ÓPTIMOS</h2>
+              <p>
+                Innovación tecnológica para potenciar tus campañas publicitarias,
+                utilizando <strong>las herramientas más avanzadas</strong> para alcanzar y superar tus
+                objetivos.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 my-5 flex align-center justify-content-center">
+          <div class="card">
+            <div class="card__header">
+              <img
+                src="/assets/images/isolated-beautiful-cyber-woman-against-abstract-background.jpg"
+                alt="Creatividad"
+              />
+              <img
+                src="/assets/images/icons/chincheta.svg"
+                class="card__icon"
+                alt="Icono"
+              />
+            </div>
+            <div class="card__number">2</div>
+            <div class="card__body">
+              <h2>TECNOLOGÍA PARA RESULTADOS ÓPTIMOS</h2>
+              <p>
+                Innovación tecnológica para potenciar tus campañas publicitarias,
+                utilizando <strong>las herramientas más avanzadas</strong> para alcanzar y superar tus
+                objetivos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-3 footer-section">
+            <h4>Acerca de Nosotros</h4>
+            <p>
+              Somos una empresa dedicada a brindar soluciones digitales
+              innovadoras.
+            </p>
+          </div>
+          <div class="col col-md-3 footer-section">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#galeria">Galería</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col col-md-3 footer-section">
+            <h4>Contacto</h4>
+            <p>Email: contacto@empresa.com</p>
+            <p>Teléfono: +123 456 789</p>
+          </div>
+          <div class="col col-md-3 footer-section">
+            <h4>Síguenos</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
