@@ -1,4 +1,3 @@
-// Inicializar Swiper
 // Inicialización de Swiper
 const swiper = new Swiper('.hero-swiper', {
   loop: true,
