@@ -85,20 +85,30 @@ body {
   margin-bottom: 3rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-primary {
-  color: #e2001a;
+  color: #e2001a !important;
 }
 
 .text-secondary {
-  color: #001c3a;
+  color: #001c3a !important;
 }
 
 .text-white {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .text-end {
@@ -107,6 +117,14 @@ body {
 
 .text-start {
   text-align: start;
+}
+
+.bg-primary {
+  background-color: #e2001a;
+}
+
+.bg-secondary {
+  background-color: #001c3a;
 }
 
 .row > * {
@@ -383,8 +401,8 @@ body {
   }
 }
 .header {
-  background: #e2001a;
-  color: white;
+  background: #ffffff;
+  color: #e2001a;
 }
 .header .navbar {
   display: flex;
@@ -403,9 +421,9 @@ body {
   cursor: pointer;
 }
 .header .navbar .menu-toggle span {
-  width: 25px;
-  height: 3px;
-  background: white;
+  width: 27px;
+  height: 4px;
+  background: #e2001a;
   transition: transform 0.3s ease;
 }
 .header .navbar .navbar-content {
@@ -419,7 +437,7 @@ body {
   list-style: none;
 }
 .header .navbar .navbar-content .nav-links a {
-  color: white;
+  color: #e2001a;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -637,7 +655,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   padding: 2rem;
-  background: #001c3a;
+  background-color: #001c3a;
   color: white;
 }
 .footer .footer-section h4 {
@@ -715,11 +733,16 @@ body {
 .btn-submit {
   width: 100%;
   border: none;
-  background: yellow;
-  color: red;
+  background: #fff200;
+  color: #e2001a;
   border-radius: 100px;
+  font-weight: 600;
   padding: 8px 0px;
   cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #dacf05;
 }
 
 [type=radio]:checked,
