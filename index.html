@@ -52,28 +52,66 @@
         <!-- Contenido del navbar -->
         <div class="navbar-content">
           <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
           </ul>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
+        </div>
+        <div class="social-icons">
+          <img src="/assets/images/general/Recurso 15.svg" width="20" alt="">
+                <img src="/assets/images/general/Recurso 16.svg" width="20" alt="">
         </div>
       </nav>
     </header>
 
     <!-- Sección Hero -->
-    <section id="inicio" class="hero container-fluid" data-aos="fade-up">
-      <div class="container">
-        <h1>Bienvenido a nuestra página</h1>
-        <p>Descubre nuestros servicios y productos innovadores.</p>
-        <a href="#servicios" class="btn">Conoce más</a>
+<!-- HTML -->
+<section class="hero-section">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <img src="/assets/images/hero/01.webp" alt="Imagen 1">
+          <div class="slide-overlay"></div>
+          <div class="slide-text">
+            <h1>A veces,
+              somos
+              gente
+              normal</h1>
+          </div>
+        </div>
       </div>
-    </section>
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <img src="/assets/images/hero/02.webp" alt="Imagen 2">
+          <div class="slide-overlay"></div>
+          <div class="slide-text">
+            <h1>A veces,
+              somos
+              gente
+              normal</h1>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <img src="/assets/images/hero/03.webp" alt="Imagen 2">
+          <div class="slide-overlay"></div>
+          <div class="slide-text">
+            <h1>A veces,
+              somos
+              gente
+              normal</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
   
     
     <section id="servicios" class="services container">
@@ -183,14 +221,14 @@ talento y experiencia para ofrecer <strong>resultados excepcionales y transforma
     </section>
 
     <section class="info-section">
-      <img src="/assets/images/impactacom.png" alt="">
+      <img src="/assets/images/impactacom.png" data-aos="fade-down" alt="">
       <h2 class="title-info">
         VENDEMOS H U M O CON MUCHA PASIÓN
       </h2>
     </section>
 
     <section class="customers">
-      <div class="container-fluid">
+      <div class="container-fluid" data-aos="fade-up">
         <h2 class="text-center">¿NUESTROS CLIENTES?</h2>
        
         <div class="row justify-content-center" style="gap: 10px;">
@@ -242,7 +280,7 @@ talento y experiencia para ofrecer <strong>resultados excepcionales y transforma
     </section>
 
     <section class="section-form">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <h2><span>ENVIANOS TU</span> MENSAJE</h2>
         <div class="row">
           <div class="col-md-6">
@@ -372,9 +410,25 @@ Puede ejercer sus derechos conforme a lo dispuesto en la Política de Privacidad
               <li><a href="#">VENTAS</a></li>
             </ul>
           </div>
-          <div class="col col-md-3 footer-section">
-            <h4>Contacto</h4>
-            <p>FORMULARIO DE CONTACTO</p>
+          <div class="col col-md-3 footer-section flex flex-column justify-content-between">
+            <div>
+              <h4>Contacto</h4>
+              <p>FORMULARIO DE CONTACTO</p>
+            </div>
+            
+            <div>
+              <h4>Redes</h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="/assets/images/general/Recurso 15.svg" width="20" alt="">
+                  <img src="/assets/images/general/Recurso 16.svg" width="20" alt="">
+                </div>
+                <div class="col-md-6">
+                  <img src="/assets/images/logo/Recurso 14.svg" width="130" alt="">
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
     </footer>

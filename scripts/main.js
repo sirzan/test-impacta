@@ -1,15 +1,15 @@
 // Inicializar Swiper
-const swiper = new Swiper('.swiper-container', {
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+// Inicialización de Swiper
+const swiper = new Swiper('.hero-swiper', {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
   
   // Inicializar AOS
   AOS.init({
